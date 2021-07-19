@@ -1,0 +1,120 @@
+main{
+    padding-top: 48px;
+    display: grid;
+    grid-template-areas:
+                        "plan-plus plan-plus ."
+                        ". plan-premium plan-premium"
+                        "plan-free plan-free ."
+                        ;
+}
+
+@media (max-width: 40rem){
+    main{
+        padding-top: 48px;
+        display: grid;
+        grid-template-areas: ". ."
+                            "plan-plus plan-plus"
+                            "plan-premium plan-premium"
+                            "plan-free plan-free"
+                            ". .";
+    }
+
+    .plan-plus .card-text{
+        width: 280px;
+    }
+}
+
+.background{
+    background: url("../images/plans-background.jpg") center/cover;
+    filter: grayscale(50%);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.card{
+    position: relative;
+    width: 60%;
+    padding: 30px;
+    border: 4px solid #023100;
+    margin: 40px auto;
+    overflow: hidden;
+    display: flex;
+}
+
+.card:hover{
+    border-color: #e75858;
+}
+
+.card-item{
+    color: black;
+    text-decoration: none;
+}
+
+.card__badge{
+    position: absolute;
+    background-color: #fa1849;
+    color: white;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.1);
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    transform: rotate(45deg) translate(6.5rem, -4.3rem);
+    transform-origin: center;
+    width: 20rem;
+    text-align: center;
+}
+
+.card__badge:hover{
+    background-color: white;
+    color: #fa1849;
+}
+
+.card-text{
+    color: grey;
+}
+
+.card-description{
+    color: #175317;
+    background-color: white;
+    padding: 16px;
+    border: 2px solid #217921;
+    font-size: larger;
+}
+
+.plan-free{
+    grid-area: plan-free;
+    background-color: #edffed;
+}
+
+.plan-plus{
+    grid-area: plan-plus;
+    background-color: #c7ffc7;
+}
+
+.plan-premium{
+    grid-area: plan-premium;
+    background-color: #035000;
+}
+
+.plan-premium .card-head{
+    color: white;
+}
+
+.plan-premium .card-text {
+    color: #b1b1b1;
+}
+
+.plan-premium .card-description{
+    color: #175317;
+    padding: 16px;
+    border: 2px solid #217921;
+    font-size: larger;
+}
+
+
+

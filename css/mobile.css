@@ -1,0 +1,56 @@
+
+@media (min-width: 350px) {
+    #product-overview h1{
+        font-size: x-large;
+    }
+
+    .section-card{
+        margin: 30px 10px;
+    }
+
+    .info-item{
+        margin: 0;
+    }
+}
+
+@media (max-width: 350px){
+    .testimonial__image-container{
+        display: block;
+        width: 75%;
+    }
+
+    .testimonial__image{
+        width: 100%;
+        box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+    }
+    
+    .testimonial__image-container:nth-of-type(2){
+        display: block;
+        width: 75%;
+    }
+
+    .testimonial__info{
+        display: block;
+        text-align: end;
+        width: 70%;
+        margin-top: -20%;
+    }
+}
+
+@media (min-width: 60rem){
+    #product-overview h1{
+        font-size: 2rem;
+    }
+
+    .toggle-button{
+        display: none;
+    }
+}
+
+@media (max-width: 60rem){
+    .main-nav{
+        display: none;
+    }
+
+    
+}
